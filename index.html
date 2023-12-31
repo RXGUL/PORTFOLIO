@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cc62a31e6c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer</p>
+                <h1>Hi, I'm <span>RAGUL V</span><br> from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------About------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>An Information Communication Engineering student at SASTRA University,
+                        Thanjavur currently pursuing my 4th year as a quick learner with a passion
+                        for Front-end development, CSS and JAVA-script Fairly skilled in
+                        programming, currently in the process of learning more. very interactive
+                        and fun to work with.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Languages</span><br>Python , SQL , HTML , CSS , JAVA-script , C++</li>
+                            <li><span>Framework/Libraries</span><br>ReactJs , NodeJs , Pandas , Numpy</li>
+                            <li><span>Data Visualization Tools</span><br>PowerBI , Tableau , Microsoft Excel</li>
+                            <li><span>App Developer</span><br>Kotlin</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Data Engineer Intern</span><br>Geons Logix </li>
+                            <li><span>Full Stack developer Intern(2023)</span><br>EVE HEALTHCARE CENTRES PVT LTD Founder & CO</li>
+                            <li><span>Billing Manager</span><br>Next IT world</li>
+                            <li><span>Lead(2023)</span><br>Sastra Football Team</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2018</span><br>KAMALA NIKETAN MONTESSORI SCHOOL</li>
+                            <li><span>2020</span><br>VELAMMAL INTERNATIONAL SCHOOL</li>
+                            <li><span>2024</span><br>SASTRA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------Services-------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>Designs and Creating websites, handling both front-end (user interface) and back-end (server-side) development tasks</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>PowerBI</h2>
+                    <p>designs and implements business intelligence solutions to analyze and visualize data for informed decision-making.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-file-excel"></i>
+                    <h2>Microsoft Excel</h2>
+                    <p>Manipulates and analyzes data, creates spreadsheets, and performs calculations for various business and personal purposes</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-----------------------------Portfolio----------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Food Website</h3>
+                        <p>Developed an engaging food website using HTML, CSS, and JavaScript This project features an appealing user interfaceand interactive functionalities to enhance the user experience.</p>
+                        <a href="https://rxgul.github.io/rxgulfood.github.io/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Udemy Certification</h3>
+                        <p>Completion of 2023 Web development Bootcamp.</p>
+                        <a href="https://drive.google.com/file/d/1XPCOagMn4XFCtcEWLx0PqaqfX5FC9B_s/view?usp=sharing"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>A deep learning technique for intrusion detection system using a RNN</h3>
+                        <p>Strengthening security of network systems with a ML-based IDS framework.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-----------Contact------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> ragulv73@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8668112099</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ragul07/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/RXGUL"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1dkMVm5S9U8f_e15RajnruhAtpL62-pSQ/view?usp=sharing" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Ragul</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function clsoemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxKWUG_ymiafN2aTGuHDyiCQf4e1gSBl7qv2cm-q6hc88ednDvd_Asl3-Zen8604Oz2/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function() {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
